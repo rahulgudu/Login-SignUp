@@ -50,6 +50,11 @@ main{
     width: 45%;
     top: 0;
     left: 0;
+
+    /* 21st code goes here, doing some adjustment */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 /* --end-- */
 
@@ -75,7 +80,24 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    /* 22nd code goes here, doing some adjustment */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
+/* --end-- */
+
+/* 23rd code goes here, making the sign-up form transparent */
+form.sign-up-form{
+    opacity: 0;
+    pointer-events: none;
+}
+/* --end-- */
+
+/* 20th code goes here, making the display none for sign-in form */
+/* form.sign-in-form{
+    display: none;
+} */
 /* --end-- */
 
 /* 12th code goes here, styling the logo div */
@@ -86,9 +108,10 @@ form{
 
 .logo img{
     width: 27px;
+    margin-right: 0.3rem;
 }
 
-.logo h4{
+.logo h3{
     font-size: 1.1rem;
     margin-top: -9px;
     letter-spacing: -0.5px;
@@ -190,3 +213,4 @@ label{
 .text a:hover{
     color: #8371fd;
 }
+/* --end-- */
