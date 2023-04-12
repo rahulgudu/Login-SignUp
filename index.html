@@ -1,4 +1,4 @@
-<!-- Last code is 18th and it is on css -->
+<!-- Last code is 40th and it is on css -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +18,7 @@
                 <!-- 4th code goes here, adding the forms-wrap -->
                 <div class="forms-wrap">
                     <!-- 7th code goes here, adding the form -->
-                    <form action="index.html" class="sign-in-form">
+                    <form action="index.html" autocomplete="off" class="sign-in-form">
                         <!-- 8th code goes here, adding the logo -->
                         <div class="logo">
                             <img src="./img/logo.png" alt="">
@@ -29,22 +29,22 @@
                         <div class="heading">
                             <h2>Welcome Back</h2>
                             <h6>Not registered yet?</h6>
-                            <a href="" class="toggle">Sign Up</a>
+                            <a href="#" class="toggle">Sign Up</a>
                         </div>
 
                         <!-- 10th code goes here, adding the actual form -->
                         <div class="actual-form">
                             <div class="input-wrap">
-                                <input type="text" minlength="4" class="input-field" autocomplete="off" required>
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required/>
                                 <label>Name</label>
                             </div>
 
                             <div class="input-wrap">
-                                <input type="password" minlength="4" class="input-field" autocomplete="off"  required>
+                                <input type="password" minlength="4" class="input-field" autocomplete="off"  required/>
                                 <label>Password</label>
                             </div>
 
-                            <input type="submit" value="Sign In" class="sign-btn">
+                            <input type="submit" value="Sign In" class="sign-btn"/>
                             <p class="text">
                                 Forgotten your password or your login details? <a href="#">Get Help</a> signing in 
                             </p>
@@ -52,7 +52,7 @@
                     </form>
 
                     <!-- 19th code goes here, adding the sign up form -->
-                    <form action="index.html" class="sign-up-form">
+                    <form action="index.html" autocomplete = "off" class="sign-up-form">
                         <!-- 8th code goes here, adding the logo -->
                         <div class="logo">
                             <img src="./img/logo.png" alt="">
@@ -63,7 +63,7 @@
                         <div class="heading">
                             <h2>Getting Started</h2>
                             <h6>Already have an account ?</h6>
-                            <a href="" class="toggle">Sign In</a>
+                            <a href="#" class="toggle">Sign In</a>
                         </div>
 
                         <!-- 10th code goes here, adding the actual form -->
@@ -75,7 +75,7 @@
 
 
                             <div class="input-wrap">
-                                <input type="email" minlength="4" class="input-field" autocomplete="off"  required>
+                                <input type="email" class="input-field" autocomplete="off"  required>
                                 <label>Email</label>
                             </div>
 
@@ -84,7 +84,7 @@
                                 <label>Password</label>
                             </div>
 
-                            <input type="submit" value="Sign In" class="sign-btn">
+                            <input type="submit" value="Sign In" class="sign-btn"/>
                             <p class="text">
                                 By signing up, I agree to the <a href="#">Terms of Services</a> and <a href="#">Privacy Policy</a>
                             </p>
@@ -93,12 +93,40 @@
                 </div>
 
                 <!-- 5th code goes here, adding the carousel -->
-                <div class="carousel"></div>
+                <div class="carousel">
+                    <!-- 32nd code goes here, adding the images wraper div -->
+                    <div class="images-wrapper">
+                        <img src="img/image1.png" class="image img-1 show" alt="">
+                        <img src="img/image2.png" class="image img-2" alt="">
+                        <img src="img/image3.png" class="image img-3" alt="">
+                    </div>
+
+                    <!-- 33rd code goes here, adding the text slider div -->
+                    <div class="text-slider">
+                        <!-- 34th code goes here, adding the text-wrap div -->
+                        <div class="text-wrap">
+                            <!-- 35th code goes here, adding the text-group div -->
+                            <div class="text-group">
+                                <h2>Create your own courses</h2>
+                                <h2>Customize as you like</h2>
+                                <h2>Invites students your own div</h2>
+                            </div>
+                        </div>
+
+                            <!-- 36th code goes here, adding the bullets div -->
+                        <div class="bullets">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <!-- --javascript-- -->
-    <script src="app.js"></script>
+<!-- --javscript-- -->
+<script src="app.js"></script>
 </body>
 </html>

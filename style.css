@@ -55,6 +55,8 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    /* 27th code goes here, */
+    transition: 0.8s ease-in-out;
 }
 /* --end-- */
 
@@ -67,6 +69,8 @@ main{
     top: 0;
     background-color: #ffe0d2;
     border-radius: 2rem;
+    /* 27th code goes here, */
+    transition: 0.8s ease-in-out;
 }
 /* --end-- */
 
@@ -84,6 +88,9 @@ form{
     /* 22nd code goes here, doing some adjustment */
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+
+    /* 31st code goes here, adding the transition so that the change of form occur during the transition */
+    transition: opacity 0.02s 0.4s;
 }
 /* --end-- */
 
@@ -192,6 +199,7 @@ label{
     border: none;
     cursor: pointer;
     border-radius: 0.8rem;
+    font-size: 0.8rem;
     margin-bottom: 2rem;
     transition: 0.3s;
 }
@@ -214,3 +222,64 @@ label{
     color: #8371fd;
 }
 /* --end-- */
+
+/* 26th code goes here, adding style of main.sign-up-mode relevant to js code to forms-wrap */
+main.sign-up-mode .forms-wrap{
+    left: 55%;
+}
+/* --end-- */
+
+/* 28th code goes here, adding the style of main.sign-up-mode relevant to js code to coursel */
+main.sign-up-mode .carousel{
+    left: 0%;
+}
+/* --end-- */
+
+/* 29th code goes here, adding the style for sign-in-form */
+main.sign-up-mode form.sign-in-form{
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* --end-- */
+/* 30th code goes here, adding the style for sign-up-form */
+main.sign-up-mode form.sign-up-form{
+    opacity: 1;
+    pointer-events: all;
+}
+/* --end-- */
+
+/* 37th code goes here, styling the image-wrapper div */
+.image-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+/* --end-- */
+
+/* 38th code goes here, styling the image class */
+.image{
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    opacity: 0;
+}
+.image.show{
+    opacity: 1;
+}
+/* --end-- */
+
+/* 39th code goes here, adding style to text slider */
+.text-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* 40th code goes here, adding the style to bullets div */
+.bullets{
+    height: 10px;
+    background-color: red;
+    width: 100px;
+}
