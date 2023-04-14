@@ -60,19 +60,7 @@ main{
 }
 /* --end-- */
 
-/* styling the coursel */
-.carousel{
-    position: absolute;
-    height: 100%;
-    width: 55%;
-    left: 45%;
-    top: 0;
-    background-color: #ffe0d2;
-    border-radius: 2rem;
-    /* 27th code goes here, */
-    transition: 0.8s ease-in-out;
-}
-/* --end-- */
+
 
 /* 11th code goes here, styling the form */
 form{
@@ -249,8 +237,25 @@ main.sign-up-mode form.sign-up-form{
 }
 /* --end-- */
 
+/* styling the coursel */
+.carousel{
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    left: 45%;
+    top: 0;
+    background-color: #ffe0d2;
+    border-radius: 2rem;
+    /* 43rd code goes here */
+    display: grid;
+    grid-template-rows: auto 1fr;
+    /* 27th code goes here, */
+    transition: 0.8s ease-in-out;
+}
+/* --end-- */
+
 /* 37th code goes here, styling the image-wrapper div */
-.image-wrapper{
+.images-wrapper{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -259,7 +264,8 @@ main.sign-up-mode form.sign-up-form{
 
 /* 38th code goes here, styling the image class */
 .image{
-    width: 100%;
+    display: grid;
+    width: 90%;
     grid-column: 1/2;
     grid-row: 1/2;
     opacity: 0;
@@ -276,10 +282,48 @@ main.sign-up-mode form.sign-up-form{
     justify-content: center;
     flex-direction: column;
 }
+/* --end-- */
+
+/* 41st code goes here, adding style to text-wrap */
+.text-wrap{
+    max-height: 2.2rem;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+}
+/* --end-- */
+
+/* 42nd code goes here, adding style to text-group */
+.text-group{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(0);
+}
+.text-group h2{
+    list-style: 2.2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+/* --end-- */
 
 /* 40th code goes here, adding the style to bullets div */
 .bullets{
-    height: 10px;
-    background-color: red;
-    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.bullets span{
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #aaa;
+    margin: 0 0.25rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bullets span.active{
+    width: 1.1rem;
+    background-color: #151111;
+    border-radius: 1rem;
+}
+/* --end-- */
