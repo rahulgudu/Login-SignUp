@@ -251,6 +251,8 @@ main.sign-up-mode form.sign-up-form{
     grid-template-rows: auto 1fr;
     /* 27th code goes here, */
     transition: 0.8s ease-in-out;
+    /* 48th goes here, adding the overflow hidden property */
+    overflow: hidden;
 }
 /* --end-- */
 
@@ -269,9 +271,29 @@ main.sign-up-mode form.sign-up-form{
     grid-column: 1/2;
     grid-row: 1/2;
     opacity: 0;
+    /* 45th code goes here, adding the transtiton property */
+    transition: opacity 0.3s, transform 0.5s;
 }
+
+/* 46th code goes here, adding the img-1 transform property */
+.img-1{
+    transform: translate(0, -50px);
+}
+
+/* 49th code goes here, adding the img-2 transform property */
+.img-2{
+    transform: scale(0.4, 0.5);
+}
+
+/* 50th code goes here, adding the img-3 transform property */
+.img-3{
+    transform: scale(0.3) rotate(-20deg);
+}
+
 .image.show{
     opacity: 1;
+    /* 47th code goes here, adding tranform property to its original position */
+    transform: none;
 }
 /* --end-- */
 
@@ -298,6 +320,8 @@ main.sign-up-mode form.sign-up-form{
     flex-direction: column;
     text-align: center;
     transform: translateY(0);
+    /* 52nd code goes here, adding the transitio property */
+    transition: 0.5s;
 }
 .text-group h2{
     list-style: 2.2rem;
@@ -320,6 +344,7 @@ main.sign-up-mode form.sign-up-form{
     margin: 0 0.25rem;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.3s;
 }
 .bullets span.active{
     width: 1.1rem;
